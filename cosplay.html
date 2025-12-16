@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cosplay Photos - Ke Sugar</title>
+
+  <!-- CSS chung -->
+  <link rel="stylesheet" href="assets/global/globalcss.css">
+
+  <!-- CSS riêng -->
+  <link rel="stylesheet" href="pages/cosplay/cosplay.css">
+</head>
+
+<body>
+
+<!-- JS chung -->
+<script src="assets/global/globaljs.js"></script>
+
+<!-- JS riêng -->
+<script src="pages/cosplay/cosplay.js"></script>
+
+<div class="page">
+
+  <!-- ✅ HEADER -->
+  <header class="header">
+    <div class="brand-area">
+      <div class="avatar-wrapper">
+        <img src="https://iili.io/fIneulp.md.png" />
+      </div>
+      <div>
+        <div class="brand-title">Ke Sugar</div>
+        <div class="brand-subtitle">Photography & Videography Portfolio</div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a class="nav-item" href="index.html">MAIN</a>
+      <a class="nav-item" href="about.html">ABOUT ME</a>
+      <a class="nav-item" href="photos.html">PHOTOS</a>
+      <a class="nav-item" href="cosplay.html">PHOTOS COSPLAY</a>
+      <a class="nav-item" href="normal.html">NON-COSPLAY</a>
+      <a class="nav-item" href="videos.html">VIDEOS</a>
+      <a class="nav-item" href="service.html">SERVICE & CONTACT</a>
+      <a class="nav-item" href="rules.html">RULES</a>
+    </nav>
+  </header>
+
+  <!-- ✅ BOX -->
+  <section class="cosplay-section">
+
+    <!-- ✅ TABS -->
+    <div class="tab-buttons">
+      <button class="tab-button active" onclick="showTab('cos')">PHOTOS COSPLAY</button>
+      <button class="tab-button" onclick="showTab('non')">NON-COSPLAY PHOTOS</button>
+    </div>
+
+    <!-- ✅ GALLERY COSPLAY -->
+    <div id="gallery-cos" class="gallery active">
+      <div class="row-vertical">
+        <img src="https://i.ibb.co/PvLLnTkF/MEITU-20251021-204550486.jpg">
+        <img src="https://i.ibb.co/35WfCyHT/25HH1086.jpg">
+        <img src="https://i.ibb.co/35WfCyHT/25HH1086.jpg">
+      </div>
+
+      <div class="row-horizontal">
+        <img src="https://i.ibb.co/rGDcX5Zw/25-HH1130-2.jpg">
+        <img src="https://i.ibb.co/rGDcX5Zw/25-HH1130-2.jpg">
+        <img src="https://iili.io/f50fUJt.jpg">
+        <img src="https://iili.io/f50fv0N.jpg">
+        <img src="https://iili.io/f50fg5X.jpg">
+        <img src="https://iili.io/f50f4bs.jpg">
+      </div>
+    </div>
+
+    <!-- ✅ GALLERY NON-COSPLAY -->
+    <div id="gallery-non" class="gallery">
+      <div class="row-vertical">
+        <img src="https://i.ibb.co/7NW490rK/snaptik-vn-Lx2-YH-1.jpg">
+        <img src="https://i.ibb.co/Zpm8wMHL/25HH1116.jpg">
+        <img src="https://i.ibb.co/Zpm8wMHL/25HH1116.jpg">
+      </div>
+
+      <div class="row-horizontal">
+        <img src="https://i.ibb.co/9mQptgSN/ORION-1.jpg">
+        <img src="https://i.ibb.co/9mQptgSN/ORION-1.jpg">        
+      </div>
+    </div>
+
+  </section>
+</div>
+
+</body>
+</html>

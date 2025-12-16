@@ -1,0 +1,114 @@
+/* ✅ RULES BOX */
+.rules-section {
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 30px 28px;
+  box-shadow: 0 24px 60px rgba(56,189,248,0.18);
+  border: 1px solid rgba(56,189,248,0.2);
+}
+
+/* ✅ ARGB TITLE */
+.section-title {
+  font-size: 44px;
+  font-weight: 800;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  background: linear-gradient(
+    90deg,
+    rgba(0,255,255,1),
+    rgba(0,150,255,0.9),
+    rgba(0,80,255,0.8),
+    rgba(0,150,255,0.9),
+    rgba(0,255,255,1)
+  );
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: flow 4s linear infinite;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+@keyframes flow {
+  0% { background-position: 0%; }
+  100% { background-position: 300%; }
+}
+
+/* ✅ GRID */
+.rules-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.rules-box {
+  background-color: #f8fbff;
+  border-radius: 20px;
+  padding: 24px;
+  border: 1px solid rgba(56,189,248,0.25);
+  box-shadow: 0 10px 30px rgba(56,189,248,0.15);
+}
+
+.rules-title {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  color: #0ea5e9;
+}
+
+ul {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+ul li {
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+/* ✅ CONTACT */
+.contact {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contact-title {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-icons img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform .2s ease;
+}
+
+.contact-icons img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 900px) {
+  .rules-grid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,73 @@
+.about-section {
+  background-color: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(56,189,248,0.18);
+  border: 1px solid rgba(56,189,248,0.2);
+}
+
+.about-background {
+  height: 420px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://iili.io/fIneulp.md.png");
+}
+
+.about-content {
+  padding: 30px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about-title {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  background: linear-gradient(
+    90deg,
+    rgba(0,255,255,1),
+    rgba(0,150,255,0.9),
+    rgba(0,80,255,0.8),
+    rgba(0,150,255,0.9),
+    rgba(0,255,255,1)
+  );
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: flow 4s linear infinite;
+}
+
+@keyframes flow {
+  0% { background-position: 0%; }
+  100% { background-position: 300%; }
+}
+
+.about-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #374151;
+}
+
+.about-note {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 10px;
+  background: linear-gradient(
+    90deg,
+    rgba(0,255,255,1),
+    rgba(0,150,255,0.9),
+    rgba(0,80,255,0.8),
+    rgba(0,150,255,0.9),
+    rgba(0,255,255,1)
+  );
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: flow 4s linear infinite;
+}
+
+@media (max-width: 900px) {
+  .about-background { height: 260px; }
+}

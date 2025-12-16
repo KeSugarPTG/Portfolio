@@ -1,0 +1,87 @@
+/* ✅ GALLERY SECTION */
+.gallery-section {
+  border-radius: 24px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 24px 60px rgba(56,189,248,0.18);
+  border: 1px solid rgba(56,189,248,0.2);
+  width: 100%;
+}
+
+.gallery-background {
+  background-image: url("https://iili.io/fIneulp.md.png");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
+
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+/* ✅ ARGB MẠNH */
+.gallery-title {
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  text-align: center;
+  background: linear-gradient(
+    90deg,
+    rgba(0,255,255,1),
+    rgba(0,150,255,0.9),
+    rgba(0,80,255,0.8),
+    rgba(0,150,255,0.9),
+    rgba(0,255,255,1)
+  );
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: flow 4s linear infinite;
+}
+
+.gallery-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.gallery-button {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 12px 24px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(
+    90deg,
+    rgba(0,255,255,1),
+    rgba(0,150,255,0.9),
+    rgba(0,80,255,0.8),
+    rgba(0,150,255,0.9),
+    rgba(0,255,255,1)
+  );
+  background-size: 300%;
+  animation: flow 4s linear infinite;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(14,165,233,0.4);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.gallery-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(14,165,233,0.6);
+}

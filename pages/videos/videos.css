@@ -1,0 +1,202 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e0f2fe;
+  color: #1f2933;
+  opacity: 0;
+  transition: opacity .5s ease;
+  user-select: none;
+}
+
+body.loaded { opacity: 1; }
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 30px;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.brand-area {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.avatar-wrapper {
+  width: 110px;
+  height: 110px;
+  border-radius: 999px;
+  overflow: hidden;
+  border: 3px solid #fff;
+  background-color: #e0f2fe;
+  box-shadow: 0 8px 20px rgba(56,189,248,0.25);
+}
+
+.avatar-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.brand-title {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.brand-subtitle {
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: flex-end;
+  max-width: 500px;
+}
+
+.nav-item {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #4b5563;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg,#3b82f6,#0ea5e9);
+  transition: width .3s ease;
+}
+
+.nav-item:hover::after { width: 100%; }
+
+/* INTRO BOX */
+.video-intro {
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 30px 28px;
+  box-shadow: 0 24px 60px rgba(56,189,248,0.18);
+  border: 1px solid rgba(56,189,248,0.2);
+  margin-bottom: 40px;
+}
+
+.video-intro h1 {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, cyan, #0096ff, #0050ff, #0096ff, cyan);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: flow 4s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes flow {
+  0% { background-position: 0%; }
+  100% { background-position: 300%; }
+}
+
+.video-intro p {
+  font-size: 15px;
+  color: #4b5563;
+  margin-bottom: 20px;
+}
+
+/* ✅ GALLERY GRID KHÔNG KHOẢNG CÁCH */
+.video-upload-row,
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+
+/* ✅ VIDEO FULL Ô – KHÔNG BO GÓC */
+.video-upload-box video,
+.video-item iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  border: none;
+  object-fit: cover;
+}
+
+/* ✅ LANDSCAPE = 2 CỘT */
+.video-landscape {
+  grid-column: span 2;
+}
+
+/* ✅ PORTRAIT = 1 CỘT */
+.video-portrait {
+  grid-column: span 1;
+}
+
+/* COMING SOON */
+.coming-soon {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  color: #94a3b8;
+  opacity: 0.5;
+  padding: 40px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* HIGHLIGHT SECTION */
+.video-section {
+  background-color: #0f172a;
+  padding: 40px 28px;
+  border-radius: 24px;
+  color: #fff;
+  margin-top: 40px;
+}
+
+.pastel-drift {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 35px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, cyan, #0096ff, #0050ff, #0096ff, cyan);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: flow 4s linear infinite;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .video-upload-row,
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
